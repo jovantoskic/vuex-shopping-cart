@@ -24,13 +24,12 @@
         data() {
             return {
                 loading:false,
-                productIndex: 1
             }
         },
 
         computed: {
             ...mapState({
-             products: state => state.products,
+             products: state => state.products.items,
             }),
             ...mapGetters({
                 productIsInStock:'productIsInStock'
